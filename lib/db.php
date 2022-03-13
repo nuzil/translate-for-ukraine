@@ -93,10 +93,10 @@ class DB
             $contactName['name'] = $contact['nickname'];
             switch ($channel) {
                 case "telegram":
-                    $contactName['telegram'] = $contact['telegram'];
+                    $contactName['telegram'] = '<a href="https://t.me/'.str_replace("@", "", $contact['telegram']).'">Telegram</a>';
                     break;
                 case "skype":
-                    $contactName['skype'] = $contact['skype'];
+                    $contactName['skype'] = '<a href="skype:'.$contact['skype'].'?call">Skype</a>';
                     break;
                 case "telegram_phone":
                     $contactName['telegram_phone'] = $contact['telephone'];
@@ -108,7 +108,7 @@ class DB
                     $contactName['facetime'] = $contact['telephone'];
                     break;
                 case "whatsapp":
-                    $contactName['whatsapp'] = $contact['telephone'];
+                    $contactName['whatsapp'] = '<a href="https://wa.me/'.$contact['telephone'].'">WhatsApp</a>';
                     break;
             }
             return json_encode($contactName);
@@ -138,6 +138,7 @@ class DB
 
     private function getChannelsForCondition($condition)
     {
+
         $data = $this->connection->query("SELECT languages, messengers FROM users WHERE ". $condition);
         $data = $data->fetch_all();
 
@@ -171,19 +172,19 @@ class DB
     {
         switch ($week) {
             case 0:
-                return "Montag";
+                return "Sonntag";
             case 1:
-                return "Dienstag";
+                return "Montag";
             case 2:
                 return "Dienstag";
             case 3:
-                return "Donnerstag";
+                return "Mittwoch";
             case 4:
-                return "Freitag";
+                return "Donnerstag";
             case 5:
-                return "Samstag";
+                return "Freitag";
             case 6:
-                return "Sonntag";
+                return "Samstag";
         }
     }
 
