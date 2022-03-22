@@ -182,9 +182,10 @@ nav {
 
     &:hover,
     &.selected {
-        border-color: $color-blue;
         color: $color-blue;
-
+    }
+    
+    &.selected {
         &::after {
             opacity: 1;
         }
@@ -225,6 +226,7 @@ nav {
         }
     }
 
+    &:hover,
     &.selected {
         &[data-id='phone'] {
             &::before {
