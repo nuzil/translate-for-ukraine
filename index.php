@@ -10,23 +10,7 @@
     <link rel="stylesheet" href="lib/css/styles.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <!-- <a href="/">Home</a> -->
-                </li>
-                <li>
-                    <a class="logo" href="/">
-                        <img src="lib/images/logo.svg" alt="Translate for Ukraine">
-                    </a>
-                </li>
-                <li>
-                    <!-- <a href="/faq">FAQ</a> -->
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <?php include("header.php");>
     <section>
         <article>
             <header>
@@ -74,8 +58,7 @@
             </div>
         </article>
     </section>
-    <footer>
-	</footer>
+    <?php include("footer.php");>	
 <script>
     var accordion = $("[data-role='accordion']");
     var accordionItem = accordion.children("[data-role='accordion-item']");
