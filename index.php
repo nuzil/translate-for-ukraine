@@ -1,4 +1,4 @@
-<?php include("header.php");>
+<?php include("header.php"); ?>
     <section>
         <article>
             <header>
@@ -46,7 +46,7 @@
             </div>
         </article>
     </section>
-    <?php include("footer.php");>	
+    <?php include("footer.php"); ?>
 <script>
     var accordion = $("[data-role='accordion']");
     var accordionItem = accordion.children("[data-role='accordion-item']");

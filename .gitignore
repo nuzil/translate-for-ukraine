@@ -1,3 +1,4 @@
 config.json
 *.map
 .DS_Store
+.idea
