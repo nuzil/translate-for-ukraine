@@ -20,7 +20,7 @@
             <span class="channels"></span>
         </div>
         <div class="location"  id="support_doctor">
-            <div class="title">Врач чи Лікарня</div>
+            <div class="title">Лікар чи Лікарня</div>
             <span class="languages"></span>
             <span class="channels"></span>
         </div>
