@@ -70,7 +70,7 @@
                             dataType: 'json',
                             success: function (data, status, xhr) {
                                 $("#intro").hide();
-                                $("#contact").append(data.name + " - Contact:" +data[channel])
+                                $("#contact").append(data.name + " - Contact: " +data[channel])
                             }
                         });
                 });
