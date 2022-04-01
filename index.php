@@ -102,7 +102,10 @@
                         {
                             dataType: 'json',
                             success: function (data, status, xhr) {
-                                contact.append("<div id='contact-item'>" + data.name + " - Contact:" +data[channel] + "</div>");
+
+                                $("#intro").hide();
+                                $("#contact").append(data.name + " - Contact: " +data[channel])
+
                             }
                         }
                     );
