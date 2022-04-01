@@ -1,6 +1,7 @@
 <?php include("../header.php"); ?>
 <section>
     <article>
+
 <h1>Impressum</h1>
 <h5>INTAMT | INTERNATIONALE AKADEMIE F&Uuml;R MANAGEMENT UND TECHNOLOGIE e. V.</h5>
 <p>Alt-Pempelfort 15<br />40211 D&uuml;sseldorf&nbsp;</p>
@@ -66,6 +67,7 @@
 <p>Quellen:</p>
 <p>Datenschutz-Konfigurator von&nbsp;<a href="http://www.mein-datenschutzbeauftragter.de/" target="_blank" rel="noopener">mein-datenschutzbeauftragter.de</a>&nbsp;&amp; Musterdatenschutzerkl&auml;rung nach EU-DSGVO der Universit&auml;t M&uuml;nster.</p>
 <p>D&uuml;sseldorf, 2018</p>
+
     </article>
 </section>
 <?php include("../footer.php"); ?>
