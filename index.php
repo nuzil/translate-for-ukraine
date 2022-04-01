@@ -15,7 +15,7 @@
                         </div>
                     </div>
                     <div data-role='accordion-item' class="location" id="support_doctor">
-                        <div data-role='accordion-trigger' class="location-title">Врач чи Лікарня</div>
+                        <div data-role='accordion-trigger' class="location-title">Лікар чи Лікарня</div>
                         <div data-role='accordion-content' class="location-contact">
                             <div class="languages"></div>
                             <div class="channels"></div>
