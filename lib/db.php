@@ -93,22 +93,29 @@ class DB
             $contactName['name'] = $contact['nickname'];
             switch ($channel) {
                 case "telegram":
-                    $contactName['telegram'] = '<a href="https://t.me/'.str_replace("@", "", $contact['telegram']).'">Telegram</a>';
+                    $contactValue = $contact['telegram'] ?: $this->findClosestExistsContact($data, 'telegram');
+                    $contactName['telegram'] = '<a href="https://t.me/'.str_replace("@", "", $contactValue).'">Telegram</a>';
                     break;
                 case "skype":
-                    $contactName['skype'] = '<a href="skype:'.$contact['skype'].'?call">Skype</a>';
+                    $contactValue = $contact['skype'] ?: $this->findClosestExistsContact($data, 'skype');
+                    $contactName['skype'] = '<a href="skype:'.$contactValue.'?call">Skype</a>';
                     break;
                 case "telegram_phone":
-                    $contactName['telegram_phone'] = $contact['telephone'];
+                    $contactValue = $contact['telephone'] ?: $this->findClosestExistsContact($data, 'telephone');
+                    $contactName['telegram_phone'] = $contactValue;
                     break;
                 case "phone":
-                    $contactName['phone'] = $contact['telephone'];
+                    $contactValue = $contact['telephone'] ?: $this->findClosestExistsContact($data, 'telephone');
+
+                    $contactName['phone'] = '<a href="tel:'.$contactValue.'">'.$contactValue.'</a>';
                     break;
                 case "facetime":
-                    $contactName['facetime'] = $contact['telephone'];
+                    $contactValue = $contact['telephone'] ?: $this->findClosestExistsContact($data, 'telephone');
+                    $contactName['facetime'] = $contactValue;
                     break;
                 case "whatsapp":
-                    $contactName['whatsapp'] = '<a href="https://wa.me/'.$contact['telephone'].'">WhatsApp</a>';
+                    $contactValue = $contact['telephone'] ?: $this->findClosestExistsContact($data, 'telephone');
+                    $contactName['whatsapp'] = '<a href="https://wa.me/'.$contactValue.'">WhatsApp</a>';
                     break;
             }
             return json_encode($contactName);
@@ -186,7 +193,29 @@ class DB
             case 6:
                 return "Samstag";
         }
+
+        return 'unknown';
+    }
+
+    /**
+     * Search for first exists contact type in dataset
+     *
+     * @param array $data
+     * @param string $type
+     * @return string|null
+     */
+    private function findClosestExistsContact(array $data, string $type): ?string
+    {
+        shuffle($data);
+        $result = null;
+        foreach ($data as $item) {
+            if (isset($item[$type]) && $item[$type]) {
+                $result = $item[$type];
+                break;
+            }
+        }
+
+        return $result;
     }
 
 }
-

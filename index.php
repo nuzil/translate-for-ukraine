@@ -2,8 +2,8 @@
     <section>
         <article>
             <header>
-                <h1 class="mb-0">Де Вам потрібна допомога?</h1>
-                <div class="h3 mb-30 fw-l">
+            <h1 class="mb-0">Де Вам потрібна допомога?</h1>
+            <div class="h3 mb-30 fw-l">
                     <p><em>Виберіть відповідний розділ та спосіб зв&lsquo;язку, програма вибере для вас доступного на даний момент перекладача з яким ви зможете зв&lsquo;язатися.</em></p>
                     <p><em>Зв'яжіться з перекладачем за декілька хвилин, щоб перевірити чи він доступний і коротко пояснити йому суть наступного завдання.</em></p>
                     <p><em>&nbsp;</em></p>
@@ -98,6 +98,7 @@
                             dataType: 'json',
                             success: function (data, status, xhr) {
                                 contact.append("<div id='contact-item'>" + data.name + " - Contact: " +data[channel] + "</div>");
+
                             }
                         }
                     );
