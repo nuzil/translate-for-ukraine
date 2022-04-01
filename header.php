@@ -8,6 +8,15 @@
     <link rel="icon" href="/lib/images/favicon.svg" type="image/svg+xml">
     <script src="/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="/lib/css/styles.min.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LFN686ZRYD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LFN686ZRYD');
+</script>
 </head>
 <body>    
 <header>
