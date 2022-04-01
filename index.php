@@ -1,9 +1,14 @@
-<?php include("header.php");>
+<?php include("header.php"); ?>
     <section>
         <article>
             <header>
                 <h1 class="mb-0">Де Вам потрібна допомога?</h1>
-                <div class="h3 mb-30 fw-l">Оберіть з переліку назву установи.</div>
+                <div class="h3 mb-30 fw-l">
+                    <p><em>Виберіть відповідний розділ та спосіб зв&lsquo;язку, програма вибере для вас доступного на даний момент перекладача з яким ви зможете зв&lsquo;язатися.</em></p>
+                    <p><em>Зв'яжіться з перекладачем за декілька хвилин, щоб перевірити чи він доступний і коротко пояснити йому суть наступного завдання.</em></p>
+                    <p><em>&nbsp;</em></p>
+                    <p><em><strong>Ви бажаєте допомогти?</strong></em></p>
+                    <p><em>Пройдіть реєстрацію та вкажіть як людям, потребуючим допомогу, найкраще з вами зв&lsquo;язатися</em></p></div>
             </header>
             <div class="page" id="intro">
                 <div data-role='accordion'>
@@ -15,7 +20,7 @@
                         </div>
                     </div>
                     <div data-role='accordion-item' class="location" id="support_doctor">
-                        <div data-role='accordion-trigger' class="location-title">Врач чи Лікарня</div>
+                        <div data-role='accordion-trigger' class="location-title">Лікар чи Лікарня</div>
                         <div data-role='accordion-content' class="location-contact">
                             <div class="languages"></div>
                             <div class="channels"></div>
@@ -46,7 +51,7 @@
             </div>
         </article>
     </section>
-    <?php include("footer.php");>	
+    <?php include("footer.php"); ?>
 <script>
     var accordion = $("[data-role='accordion']");
     var accordionItem = accordion.children("[data-role='accordion-item']");
@@ -92,7 +97,7 @@
                         {
                             dataType: 'json',
                             success: function (data, status, xhr) {
-                                contact.append("<div id='contact-item'>" + data.name + " - Contact:" +data[channel] + "</div>");
+                                contact.append("<div id='contact-item'>" + data.name + " - Contact: " +data[channel] + "</div>");
                             }
                         }
                     );
