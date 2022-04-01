@@ -106,7 +106,8 @@ class DB
                     break;
                 case "phone":
                     $contactValue = $contact['telephone'] ?: $this->findClosestExistsContact($data, 'telephone');
-                    $contactName['phone'] = '<a href="tel:'.$contact['telephone'].'">'.$contactValue.'</a>';;
+
+                    $contactName['phone'] = '<a href="tel:'.$contactValue.'">'.$contactValue.'</a>';
                     break;
                 case "facetime":
                     $contactValue = $contact['telephone'] ?: $this->findClosestExistsContact($data, 'telephone');
@@ -218,4 +219,3 @@ class DB
     }
 
 }
-
