@@ -22,10 +22,12 @@
 </ol>
 <p>&nbsp;</p>
 <ol start="6">
-<li>Noch weitere Fragen?</li>
+<li>Noch weitere Fragen?<br /><br />
+Kein Problem! Schreibe uns einfach eine E-Mail an die folgenden Adresse:&hellip;. Wir werden uns schnellstm&ouml;glich mit dir in Verbindung setzten und alle deine Fragen beantworten.
+</li>
 </ol>
-<p>&nbsp;</p>
-<p>Kein Problem! Schreibe uns einfach eine E-Mail an die folgenden Adresse:&hellip;. Wir werden uns schnellstm&ouml;glich mit dir in Verbindung setzten und alle deine Fragen beantworten.</p>
+
+<p></p>
         </article>
     </section>
 <?php include("../footer.php"); ?>
