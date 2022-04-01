@@ -4,7 +4,7 @@
             <div class="footer-menu-container">
                 <ul class="footer-menu">
                     <li>
-                        <a href="/pages/registrieren.php">
+                        <a href="https://docs.google.com/forms/u/2/d/e/1FAIpQLScXAiC6dAEWw4oTCIUV6eXaHT0SjXUgAJGnw-_7jdhSSxLaDw/formResponse?embedded=true" target="_blank">
                             Registrieren Sie sich als Freiwilliger
                         </a>
                     </li>
