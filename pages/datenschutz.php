@@ -17,7 +17,7 @@
             <p>Verantwortlicher f&uuml;r die Verarbeitung personenbezogener Daten im Sinne der EU-Datenschutz-Grundverordnung (DSGVO)</p>
             <p><strong>INTAMT&nbsp;&nbsp;e.V.<br />Alt Pempelfort 15<br />40211&nbsp;D&uuml;sseldorf</strong></p>
             <p><strong>Ansprechpartner: Andre Zaitsev</strong></p>
-            <p><strong>E-Mail: </strong><a href="mailto:breetsa@icloud.com"><strong>breetsa@icloud.com</strong></a></p>
+            <p><strong>E-Mail: </strong><a href="mailto:zaitsev@intamt.de"><strong>zaitsev@intamt.de</strong></a></p>
             <p><strong>&nbsp;</strong></p>
         </article>
     </section>
