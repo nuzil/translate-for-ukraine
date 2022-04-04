@@ -97,8 +97,11 @@
                         {
                             dataType: 'json',
                             success: function (data, status, xhr) {
-                                contact.append("<div id='contact-item'>" + data.name + " - Contact: " +data[channel] + "</div>");
-
+                                if (data.length == 0) {
+                                    contact.append("<div>Not Available</div>");
+                                }else{
+                                    contact.append("<div id='contact-item'>" + data.name + " - Contact: " +data[channel] + "</div>");
+                                }
                             }
                         }
                     );

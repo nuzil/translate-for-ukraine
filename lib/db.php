@@ -83,9 +83,19 @@ class DB
         $where1 = $this->getFilterColumnByHour($this->getHour()) . " LIKE '%" . $this->convertWeekDayToString($this->getWeekDay()) . "%'";
 
         $channelLabel = self::CHANNELS[$channel];
+
+        $phoneChannels = ["phone", "facetime", "whatsapp"];
+        if (in_array($channel, $phoneChannels)) {
+            $where1 .= " AND telephone <> ''";
+        }
+
         $where = $location ." = 'Ja' and messengers LIKE '%".$channelLabel."%' AND ".$where1;
         $data = $this->connection->query("SELECT * FROM users WHERE ". $where);
         $data = $data->fetch_all(MYSQLI_ASSOC);
+
+        if (!count($data)) {
+            return json_encode([]);
+        }
 
         $contact = $data[rand(0, count($data) - 1)];
         if ($contact) {
@@ -120,7 +130,7 @@ class DB
             }
             return json_encode($contactName);
         }
-        return "";
+        return json_encode([]);
     }
 
     /**
