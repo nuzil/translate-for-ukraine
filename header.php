@@ -22,16 +22,18 @@
 <header>
         <nav>
             <ul>
-                <li>
-                    <!-- <a href="/">Home</a> -->
-                </li>
-                <li>
+                <li class="mr-a">
                     <a class="logo" href="/">
                         <img src="/lib/images/logo.svg" alt="Translate for Ukraine">
                     </a>
                 </li>
                 <li>
-                    <!-- <a href="/faq">FAQ</a> -->
+                    <a href="/index.php">
+                        Перекладачі
+                        <span class="sub-title">Übersetzer/in</span></a>
+                </li>
+                <li>
+                    <a class="btn" href="https://docs.google.com/forms/u/2/d/e/1FAIpQLScXAiC6dAEWw4oTCIUV6eXaHT0SjXUgAJGnw-_7jdhSSxLaDw/formResponse?embedded=true" target="_blank">Registrieren <span class="sub-title">Freiwilliger</span></a>
                 </li>
             </ul>
         </nav>

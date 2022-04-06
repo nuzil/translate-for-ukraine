@@ -7,12 +7,22 @@ $color-logo-blue: #0057b7;
 $color-logo-yellow: #FFD700;
 $color-blue: #2196f3;
 
-$font-size__h1: 2rem;
-$font-size__h2: 1.75rem;
-$font-size__h3: 1.5rem;
-$font-size__h4: 1.25rem;
-$font-size__h5: 1.125rem;
-$font-size__h6: 1rem;
+$font-size__xxxl: 2rem;
+$font-size__xxl: 1.75rem;
+$font-size__xl: 1.5rem;
+$font-size__l: 1.25rem;
+$font-size__m: 1.125rem;
+$font-size__base: 1rem;
+$font-size__s: .875rem; // 14
+$font-size__xs: .75rem; // 12
+$font-size__xxs: .625rem; // 10
+
+$font-size__h1: $font-size__xxxl;
+$font-size__h2: $font-size__xxl;
+$font-size__h3: $font-size__xl;
+$font-size__h4: $font-size__l;
+$font-size__h5: $font-size__m;
+$font-size__h6: $font-size__base;
 
 $font-weight__light: 300;
 $font-weight__regular: 400;
@@ -65,6 +75,8 @@ h6, .h6 { font-size: $font-size__h6; }
 .mr-0 { margin-right: 0; }
 .mb-0 { margin-bottom: 0; }
 .ml-0 { margin-left: 0; }
+.ml-a { margin-left: auto !important; }
+.mr-a { margin-right: auto !important; }
 .mb-20 { margin-bottom: 20px; }
 .mb-30 { margin-bottom: 30px; }
 
@@ -72,6 +84,15 @@ h6, .h6 { font-size: $font-size__h6; }
 .fw-r {font-weight: $font-weight__regular;}
 .fw-s {font-weight: $font-weight__semibold;}
 .fw-b {font-weight: $font-weight__bold;}
+
+.btn {
+    background-color: #2196f3;
+    color: $color-white;
+    padding: 10px 25px;
+    border-radius: 100px;
+    position: relative; 
+    font-weight: $font-weight__regular;
+}
 
 a {
     color: $color-black;
@@ -81,15 +102,27 @@ header,
 footer,
 section {
     max-width: 800px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    font-size: $font-size__s;
+    line-height: 1.2;
+    font-weight: $font-weight__semibold;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+footer {
+    font-size: $font-size__base;
+    font-weight: $font-weight__regular;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 nav {
-    font-size: $font-size__h5;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin: 20px 0;
-
     ul {
         display: flex;
         flex-wrap: nowrap;
@@ -100,8 +133,23 @@ nav {
         padding: 0;
     }
 
+    li {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
     a {
         text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .sub-title {
+        font-size: .785em;
+        font-weight: $font-weight__regular;
     }
 }
 
@@ -257,37 +305,12 @@ nav {
 }
 
 footer {
-    .footer-container {
-        border: solid 2px #ddd;
-        background-color: #fff;
-        border-radius: 10px;
-        margin-top: 100px;
-
-        .footer-tittle {
-            text-align: center;
-        }
-
-        .footer-menu-container {
-            display: flex;
-            justify-content: space-around;
-
-            .footer-menu {
-                list-style: none;
-                padding: 0;
-                margin: 20px 0;
-
-                li {
-                    padding: 5px;
-                }
-
-                a:hover {
-                    color: #2196f3;
-                }
-            }
-        }
-    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+// Mobile
 @media only screen and (max-width: 767px) {
     .channels {
         justify-content: space-between;
@@ -310,9 +333,29 @@ footer {
             font-size: $font-size__h6;
         }
     }
+
+    footer {
+        flex-direction: column;
+
+        .copyright {
+            order: 20;
+        }
+
+        nav {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 @media only screen and (max-width: 479px) {
+    nav {
+        li {
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+
     .channel-link {
         &[data-id] {
             &::before {
@@ -322,12 +365,6 @@ footer {
 
         span {
             display: none;
-        }
-    }
-    footer {
-        .footer-menu-container {
-            flex-direction: column;
-            text-align: center;
         }
     }
 }
