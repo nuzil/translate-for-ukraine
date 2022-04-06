@@ -3,6 +3,8 @@ $color-black: #000000;
 $color-white: #ffffff;
 $color-gray20: #333333;
 $color-gray78: #dddddd;
+$color-gray94: #f0f0f0;
+$color-gray96: #f5f5f5;
 $color-logo-blue: #0057b7;
 $color-logo-yellow: #FFD700;
 $color-blue: #2196f3;
@@ -16,6 +18,13 @@ $font-size__base: 1rem;
 $font-size__s: .875rem; // 14
 $font-size__xs: .75rem; // 12
 $font-size__xxs: .625rem; // 10
+
+$line-height__xxxl: 2;
+$line-height__xxl: 1.75;
+$line-height__xl: 1.5;
+$line-height__l: 1.25;
+$line-height__m: 1.125;
+$line-height__base: 1;
 
 $font-size__h1: $font-size__xxxl;
 $font-size__h2: $font-size__xxl;
@@ -63,9 +72,9 @@ body {
     margin: 0;
 }
 
-h1, .h1 { font-size: $font-size__h1; }
-h2, .h2 { font-size: $font-size__h2; }
-h3, .h3 { font-size: $font-size__h3; }
+h1, .h1 { font-size: $font-size__h1; line-height: $line-height__base; }
+h2, .h2 { font-size: $font-size__h2; line-height: $line-height__base; }
+h3, .h3 { font-size: $font-size__h3; line-height: $line-height__base; }
 h4, .h4 { font-size: $font-size__h4; }
 h5, .h5 { font-size: $font-size__h5; }
 h6, .h6 { font-size: $font-size__h6; }
@@ -77,13 +86,51 @@ h6, .h6 { font-size: $font-size__h6; }
 .ml-0 { margin-left: 0; }
 .ml-a { margin-left: auto !important; }
 .mr-a { margin-right: auto !important; }
+
+.mt-5 { margin-top: 5px; }
+.mt-10 { margin-top: 10px; }
+.mt-15 { margin-top: 15px; }
+.mt-20 { margin-top: 20px; }
+.mt-30 { margin-top: 30px; }
+.mt-40 { margin-top: 40px; }
+.mt-50 { margin-top: 50px; }
+.mt-60 { margin-top: 60px; }
+
+.mb-5 { margin-bottom: 5px; }
+.mb-10 { margin-bottom: 10px; }
+.mb-15 { margin-bottom: 15px; }
 .mb-20 { margin-bottom: 20px; }
 .mb-30 { margin-bottom: 30px; }
+.mb-40 { margin-bottom: 40px; }
+.mb-50 { margin-bottom: 50px; }
+.mb-60 { margin-bottom: 60px; }
+
+.p-5 { padding: 5px; }
+.p-10 { padding: 10px; }
+.p-15 { padding: 15px; }
+.p-20 { padding: 20px; }
+.p-30 { padding: 30px; }
+.p-40 { padding: 40px; }
+.p-50 { padding: 50px; }
+.p-60 { padding: 60px; }
+
+.py-30 { padding-top: 30px; padding-bottom: 30px; }
+.py-40 { padding-top: 40px; padding-bottom: 40px; }
+.py-60 { padding-top: 60px; padding-bottom: 60px; }
+.py-50 { padding-top: 50px; padding-bottom: 50px; }
+
+.px-30 { padding-left: 30px; padding-right: 30px; }
+.px-40 { padding-left: 40px; padding-right: 40px; }
+.px-50 { padding-left: 50px; padding-right: 50px; }
+.px-60 { padding-left: 60px; padding-right: 60px; }
 
 .fw-l {font-weight: $font-weight__light;}
 .fw-r {font-weight: $font-weight__regular;}
 .fw-s {font-weight: $font-weight__semibold;}
 .fw-b {font-weight: $font-weight__bold;}
+
+.bgc-g94 { background-color: $color-gray94; }
+.bgc-g96 { background-color: $color-gray96; }
 
 .btn {
     background-color: #2196f3;
@@ -92,6 +139,9 @@ h6, .h6 { font-size: $font-size__h6; }
     border-radius: 100px;
     position: relative; 
     font-weight: $font-weight__regular;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
 }
 
 a {
@@ -106,20 +156,28 @@ section {
     margin-right: auto;
 }
 
-header {
-    font-size: $font-size__s;
-    line-height: 1.2;
-    font-weight: $font-weight__semibold;
-
-    margin-top: 20px;
-    margin-bottom: 30px;
+section {
+    &:not(:last-of-type) {
+        margin-bottom: 40px;
+    }
 }
 
-footer {
-    font-size: $font-size__base;
-    font-weight: $font-weight__regular;
-    margin-top: 40px;
-    margin-bottom: 20px;
+body {
+    > header {
+        font-size: $font-size__s;
+        line-height: 1.2;
+        font-weight: $font-weight__semibold;
+    
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+    > footer {
+        font-size: $font-size__base;
+        font-weight: $font-weight__regular;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
 }
 
 nav {
@@ -141,7 +199,7 @@ nav {
 
     a {
         text-decoration: none;
-        display: flex;
+        display: flex !important;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;

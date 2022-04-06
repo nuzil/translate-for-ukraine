@@ -2,13 +2,9 @@
     <section>
         <article>
             <header>
-            <h1 class="mb-0">Де Вам потрібна допомога?</h1>
-            <div class="h3 mb-30 fw-l">
-                    <p><em>Виберіть відповідний розділ та спосіб зв&lsquo;язку, програма вибере для вас доступного на даний момент перекладача з яким ви зможете зв&lsquo;язатися.</em></p>
-                    <p><em>Зв'яжіться з перекладачем за декілька хвилин, щоб перевірити чи він доступний і коротко пояснити йому суть наступного завдання.</em></p>
-                    <p><em>&nbsp;</em></p>
-                    <p><em><strong>Ви бажаєте допомогти?</strong></em></p>
-                    <p><em>Пройдіть реєстрацію та вкажіть як людям, потребуючим допомогу, найкраще з вами зв&lsquo;язатися</em></p></div>
+                <h1 class="mb-10">Контакти перекладачів</h1>
+                <div class="h3 mb-10 fw-l">Оберіть з переліку назву установи та спосіб зв‘язку</div>
+                <div class="h5 mb-30 fw-l">Зв'яжіться з перекладачем за декілька хвилин, щоб перевірити чи він доступний і коротко пояснити йому суть наступного завдання</div>
             </header>
             <div class="page" id="intro">
                 <div data-role='accordion'>
@@ -49,6 +45,15 @@
                     </div>
                 </div>
             </div>
+        </article>
+    </section>
+    <section>
+        <article class="mt-40 mb-30 py-40 px-60 bgc-g96">
+            <header>
+                <h2 class="h3 mt-0 mb-10">Бажаєте допомогти?</h2>
+            </header>
+            <div class="h4 mb-20 fw-l">Пройдіть реєстрацію та вкажіть як найкраще з вами зв&lsquo;язатися.</div>
+            <a class="btn" href="https://docs.google.com/forms/u/2/d/e/1FAIpQLScXAiC6dAEWw4oTCIUV6eXaHT0SjXUgAJGnw-_7jdhSSxLaDw/formResponse?embedded=true" target="_blank">Registrieren</a>
         </article>
     </section>
     <?php include("footer.php"); ?>
