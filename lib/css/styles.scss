@@ -168,6 +168,15 @@ section {
     }
 }
 
+article {
+    word-break: break-word;
+
+    li {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
 body {
     > header {
         font-size: $font-size__s;
