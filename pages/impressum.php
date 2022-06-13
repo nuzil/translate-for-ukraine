@@ -5,7 +5,7 @@
         <h5>INTAMT | INTERNATIONALE AKADEMIE F&Uuml;R MANAGEMENT UND TECHNOLOGIE e. V.</h5>
         <p>Alt-Pempelfort 15<br />40211 D&uuml;sseldorf&nbsp;</p>
         <p>Tel. + 49 (0)211 5504450<br />Fax + 49 (0)211 5504454</p>
-        <p>Web&nbsp;<a href="http://www.intamt.de/" target="_blank" rel="noopener">www.intamt.de</a><br />Mail&nbsp;<a href="mailto:intamt@intamt.de">intamt(at)intamt.de</a></p>
+        <p>Web&nbsp;<a href="http://www.intamt.de/" target="_blank" rel="noopener">www.intamt.de</a><br />Mail&nbsp;<a href="mailto:zaitsev@intamt.de">zaitsev(at)intamt.de</a></p>
         <p><strong>Vertretungsberechtigter Vorstand<br /></strong>Yuri Nikitin (<span class="internal-link">Gesch&auml;ftsf&uuml;hrer)</span>, Prof. Dr. Eduard Patrik (Vorsitzender), Dr. Vladimir Fridland&nbsp;</p>
         <p><strong>Registergericht<br /></strong>Amtsgericht D&uuml;sseldorf</p>
         <p><strong>Registernummer<br /></strong>VR 9527</p>
