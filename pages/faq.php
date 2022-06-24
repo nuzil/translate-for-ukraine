@@ -18,7 +18,7 @@
             <p>Wenn du w&auml;hrend der Registrierung mit deinen Google Konto eingeloggt warst, kannst du deine eingetragenen Daten unkompliziert &auml;ndern oder l&ouml;schen, indem du das Registrierungsformular erneut &ouml;ffnest. Solltest du keinen Google Account genutzt haben, helfen wir dir gerne. Schreibe uns einfach eine E-Mail an die Adresse&hellip;</p>
             <br>
             <h4>Noch weitere Fragen?</h4>
-            <p>Kein Problem! Schreibe uns einfach eine E-Mail an die folgenden Adresse:&hellip;. Wir werden uns schnellstm&ouml;glich mit dir in Verbindung setzten und alle deine Fragen beantworten.</p>
+            <p>Kein Problem! Schreibe uns einfach eine E-Mail an die folgenden Adresse: <a href="mailto:zaitsev@intamt.de">zaitsev(at)intamt.de</a>&hellip;. Wir werden uns schnellstm&ouml;glich mit dir in Verbindung setzten und alle deine Fragen beantworten.</p>
             <br>
         </article>
     </section>
